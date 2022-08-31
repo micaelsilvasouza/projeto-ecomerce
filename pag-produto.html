@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="pag-titulo">A frase de anucio do produto</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/pag-produto.css">
 </head>
 <body>
     <header>
@@ -17,17 +18,29 @@
     </header>
     <main>
         <h1 id="titulo">Titulo do produto</h1>
-        <div id="produto">
+        <section id="produto">
             <img src="imagens/pacote-figurinhas.jpg" alt="imagem do produto">
+        </section>
+        <div id="informações">
             <p id="frase">Frase demosntrativa do produto</p>
             <p id="preço">R$00,00</p>
         </div>
-        <h2>Forma de pagamento</h2>
-        <input type="radio" name="pagamento" id="pix" checked>
-        <label for="pix">Pix</label>
-        <input type="radio" name="pagamento" id="dinheiro">
-        <label for="dinheiro">Dinheiro</label>
-        <br>
+        <div>
+            <h2>Forma de retirada do produto</h2>
+            <input type="radio" name="entrega" id="frete">
+            <label for="frete">Receber em casa</label>
+            <br>
+            <input type="radio" name="entrega" id="retira" checked>
+            <label for="retira">Retirar no estabelecimento</label>
+        </div>
+        <div>
+            <h2>Forma de pagamento</h2>
+            <input type="radio" name="pagamento" id="pix">
+            <label for="pix">Pix</label>
+            <br>
+            <input type="radio" name="pagamento" id="dinheiro" checked>
+            <label for="dinheiro">Dinheiro</label>
+        </div>
         <button>Comprar</button>
     </main>
 </body>
