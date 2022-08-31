@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="titulo">A frase de anucio do produto</title>
+    <title id="pag-titulo">A frase de anucio do produto</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
@@ -16,7 +16,19 @@
         </nav>
     </header>
     <main>
-        <h1>PAGINA DO PRODUTO</h1>
+        <h1 id="titulo">Titulo do produto</h1>
+        <div id="produto">
+            <img src="imagens/pacote-figurinhas.jpg" alt="imagem do produto">
+            <p id="frase">Frase demosntrativa do produto</p>
+            <p id="preço">R$00,00</p>
+        </div>
+        <h2>Forma de pagamento</h2>
+        <input type="radio" name="pagamento" id="pix" checked>
+        <label for="pix">Pix</label>
+        <input type="radio" name="pagamento" id="dinheiro">
+        <label for="dinheiro">Dinheiro</label>
+        <br>
+        <button>Comprar</button>
     </main>
 </body>
 </html>
