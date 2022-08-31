@@ -1,3 +1,4 @@
-console.log("Funcionou")
-let variavel = 0
-console.log(variavel)
+function montar(){
+    let pag_titulo = document.getElementById("pag-titulo")
+    pag_titulo.innerHTML = "ESSE ESSE"
+}
