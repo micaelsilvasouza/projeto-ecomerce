@@ -44,6 +44,7 @@ header > nav a:hover{
 }
 
 main {
+    min-height: 70vh;
     max-width: 1000px;
     margin: auto;
     padding-top: 10px;
@@ -52,19 +53,18 @@ main {
 
 main > h1{
     text-align: center;
-    padding-top: 30px;
+    margin: 30px
 }
 
 section.icone{
     display: inline-block;
     background-color: var(--cor4);
-    margin: 50px;
-    padding: 10px;
-    border-radius: 10px;
-    width: 300px;
-    font-weight: bolder;
     color: white;
+    font-weight: bolder;
     text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 section.icone:hover{
@@ -72,6 +72,14 @@ section.icone:hover{
 }
 
 section.icone img{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+}
+
+footer{
+    background-image: linear-gradient(to right, var(--cor1), var(--cor3));
+    color: var(--cor5);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
 }
