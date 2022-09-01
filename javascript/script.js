@@ -1,4 +1,9 @@
-function montar(){
-    let pag_titulo = document.getElementById("pag-titulo")
-    pag_titulo.innerHTML = "ESSE ESSE"
+function TrocarPagina(){
+    let link = document.getElementById("link")
+    let pagameto = document.getElementsByName("pagamento")
+    if(pagameto[0].checked){
+        link.setAttribute("href","pix.html")
+    }else{
+        link.setAttribute("href", "compra-finalizada.html")
+    }
 }
