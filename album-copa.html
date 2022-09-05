@@ -23,27 +23,59 @@
         <section id="produto">
             <img src="imagens/album-copa.jpg" alt="imagem do produto">
         </section>
-        <div>
+    
+        <section id="inform">
             <p>Álbum da Copa do Mundo Qatar 2022</p>
             <p>R$25,50</p>
-        </div>
-        <div>
             <h2>Forncedo</h2>
             <p>Papelaria da Dona Clara</p>
             <p>Jardim Ámerica 4, Rua 20, casa 22.</p>
-        </div>
-        <div>
+            
             <h2>Forma de retirada do produto</h2>
-            <p>Retirada apenas o estabelecimento</p>
-        </div>
-        <div>
+           
+            <p>
+                <input type="radio" name="retirada" id="ret"  onclick="AparecerEnder(false)">
+                <label for="ret">Retirada apenas o estabelecimento</label>
+            </p>
+            
+            <p>
+                <input type="radio" name="retirada" id="ent" checked  onclick="AparecerEnder(true)">
+                <label for="ent">Entregar</label>
+            </p>
+            
+            <div id="endereco">
+                <p>
+                    <label for="bair">Bairro</label>
+                    <input type="text" name="end" id="bair">
+                </p>
+                <p>
+                    <label for="rua">Rua</label> 
+                    <input type="text" name="end" id="rua">
+                </p>
+                <p>
+                    <label for="casa">Numero da casa </label>
+                    <input type="text" name="end" id="casa">
+                </p>
+                <p>
+                    <label for="comp">Complemento </label>
+                    <input type="text" name="comp" id="comp">
+                </p>
+                <p>
+                    <label for="nome">Entregar para </label>
+                    <input type="text" name="end" id="nome">
+                </p>
+            </div>
             <h2>Forma de pagamento</h2>
-            <input type="radio" name="pagamento" id="pix">
-            <label for="pix">Pix</label>
-            <br>
-            <input type="radio" name="pagamento" id="dinheiro" checked>
-            <label for="dinheiro">Dinheiro</label>
-        </div>
+            <p>
+                <input type="radio" name="pagamento" id="pix">
+                <label for="pix">Pix</label>
+            </p>
+            <p>
+                <input type="radio" name="pagamento" id="dinheiro" checked>
+                <label for="dinheiro">Dinheiro</label>
+            </p>
+        </section>
+    
         <a href="#" target="_self" id="link"><button onclick="TrocarPagina()">Comprar</button></a>
     </main>
     <footer>
