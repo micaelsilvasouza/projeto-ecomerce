@@ -24,20 +24,19 @@ section#produto img{
     max-width: 95%;
 }
 
-div{
+section#inform{
     max-width: 500px;
     padding: 10px;
     margin: auto;
     margin-bottom: 30px;
     text-align: left;
-}
-
-div p{
     font-size: 1.3em;
     margin-bottom: 10px;
+    line-height: 40px;
 }
 
 h2{
+    margin-top: 20px;
     font-size: 1.6em;
 }
 
@@ -45,6 +44,12 @@ label{
     font-size: 20px;
     padding: 5px;
     text-align: center;
+}
+
+div#endereco{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 button{
