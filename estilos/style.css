@@ -56,6 +56,11 @@ main > h1{
     margin: 30px
 }
 
+main > p{
+    font-size: 18px;
+    padding: 10px;
+}
+
 section.icone{
     display: inline-block;
     background-color: var(--cor4);
